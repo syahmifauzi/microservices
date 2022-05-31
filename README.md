@@ -7,6 +7,7 @@
 5. `npm run dev`
 6. Open web browser & navigate to `http://localhost:<PORT>`
 
-# Project List
+# Project List (Microservices)
 
 1. Timestamp [(Live Demo)](https://timestamp-microservice.netlify.app/) | [(Source Code)](timestamp/)
+2. Request Header Parser [(Live Demo)](https://req-header-parser-microservice.netlify.app/) | [(Source Code)](request-header-parser/)
