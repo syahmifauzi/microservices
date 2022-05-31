@@ -1,5 +1,5 @@
 [build]
   base = "/timestamp"
-  publish = "."
+  publish = "src/"
   functions = "lambda"
-  command = "PUBLIC_URL=https://timestamp-microservice.netlify.app/ npm run build"
+  command = "npm install && PUBLIC_URL=https://timestamp-microservice.netlify.app/ npm run build"
