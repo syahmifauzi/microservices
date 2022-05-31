@@ -2,4 +2,4 @@
   base = "/timestamp"
   publish = "."
   functions = "lambda"
-  command = "npm run build"
+  command = "PUBLIC_URL=https://timestamp-microservice.netlify.app/ npm run build"
