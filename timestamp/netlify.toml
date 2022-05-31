@@ -1,5 +1,5 @@
 [build]
   base = "/timestamp"
-  publish = "build/"
+  publish = "."
   functions = "lambda"
   command = "npm run build"
