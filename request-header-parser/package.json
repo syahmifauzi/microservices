@@ -1,0 +1,26 @@
+{
+  "name": "request-header-parser",
+  "version": "1.0.0",
+  "description": "microservice",
+  "author": "Syahmi Fauzi",
+  "main": "src/server.js",
+  "scripts": {
+    "build": "netlify-lambda build src",
+    "dev": "netlify dev src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.1",
+    "serverless-http": "^3.0.1"
+  },
+  "devDependencies": {
+    "netlify-cli": "^10.3.3",
+    "netlify-lambda": "^2.0.15"
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "singleQuote": true,
+    "trailingComma": "none",
+    "bracketSameLine": true
+  },
+  "license": "ISC"
+}
