@@ -25,7 +25,7 @@ router.get('/api/:date', (req, res) => {
 });
 
 app.use('/.netlify/functions/server', router); // path must route to lambda
-app.use('/', (_, res) => res.sendFile(`${__dirname}/src/index.html`));
+app.use('/', (_, res) => res.sendFile(`${__dirname}/index.html`));
 
 module.exports = app;
 module.exports.handler = serverless(app);
