@@ -13,9 +13,14 @@ const getDateObject = (date) => {
   return new Date(isNum ? parseInt(date) : date);
 };
 
-router.get('/api/:date', (req, res) => {
-  const dateObj = getDateObject(req.params.date);
-  if (isValidDate(dateObj)) {
+router.get('/api/:date?', (req, res) => {
+  const { date } = req.params;
+  const dateObj = getDateObject(date);
+  if (!date) {
+    const unix = Date.now();
+    const utc = new Date().toUTCString();
+    res.json({ unix, utc });
+  } else if (isValidDate(dateObj)) {
     const unix = dateObj.getTime();
     const utc = dateObj.toUTCString();
     res.json({ unix, utc });
