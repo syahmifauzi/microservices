@@ -32,5 +32,6 @@ router.get('/api/:date?', (req, res) => {
 app.use('/.netlify/functions/server', router); // path must route to lambda
 app.use('/', (_, res) => res.sendFile(`${__dirname}/index.html`));
 
-module.exports = app;
+// app.listen(3000, () => console.log('Listening on port 3000'));
+
 module.exports.handler = serverless(app);
