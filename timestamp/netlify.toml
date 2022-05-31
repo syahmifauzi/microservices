@@ -2,9 +2,9 @@
   base = "/timestamp"
   publish = "src/"
   functions = "lambda"
-  command = "npm install && PUBLIC_URL=https://timestamp-microservice.netlify.app/ npm run build"
+  command = "npm install && npm run build"
 
 [[redirects]]
   from = "/*"
-  to = "https://timestamp-microservice.netlify.app/.netlify/functions/server/:splat"
-  status = 200
+  to = "/.netlify/functions/server/:splat"
+  # status = 200
