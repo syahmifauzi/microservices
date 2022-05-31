@@ -1,0 +1,4 @@
+[build]
+  base = "/timestamp"
+  publish = "/"
+  command = "npm start"
