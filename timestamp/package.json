@@ -5,6 +5,7 @@
   "author": "Syahmi Fauzi",
   "main": "index.js",
   "scripts": {
+    "build": "netlify-lambda build .",
     "dev": "nodemon index.js",
     "start": "node index.js"
   },
@@ -13,6 +14,7 @@
     "serverless-http": "^3.0.1"
   },
   "devDependencies": {
+    "netlify-lambda": "^2.0.15",
     "nodemon": "^2.0.16"
   },
   "prettier": {
