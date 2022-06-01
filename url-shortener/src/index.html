@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="icon"
+      href="https://www.syahmifauzi.com/static/images/logo.png" />
+    <title>URL Shortener Microservice</title>
+  </head>
+  <body>
+    <h1>URL Shortener Microservice</h1>
+    <h2>Short URL Creation</h2>
+    <p>
+      Example: POST [this_project_url]/api/shorturl - https://www.google.com/
+    </p>
+    <hr />
+    <form action="/.netlify/functions/server/api/shorturl" method="post">
+      <label>
+        URL :
+        <input
+          type="text"
+          name="originalUrl"
+          placeholder="https://www.syahmifauzi.com/" />
+      </label>
+      <input type="submit" value="POST URL" />
+    </form>
+    <h3>Example Usage:</h3>
+    <ul>
+      <li><a href="/api/shorturl/5">[this_project_url]/api/shorturl/5</a></li>
+    </ul>
+    <h3>Will Redirect to:</h3>
+    <p>https://www.syahmifauzi.com/</p>
+  </body>
+</html>
