@@ -12,3 +12,4 @@
 1. Timestamp [(Live Demo)](https://timestamp-microservice.netlify.app/) | [(Source Code)](timestamp/)
 2. Request Header Parser [(Live Demo)](https://req-header-parser-microservice.netlify.app/) | [(Source Code)](request-header-parser/)
 3. URL Shortener [(Live Demo)](https://url-shortener-microservice.netlify.app/) | [(Source Code)](url-shortener/)
+4. File Metadata [(Live Demo)](https://file-metadata-microservice.netlify.app/) | [(Source Code)](file-metadata/)
