@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="icon"
+      href="https://www.syahmifauzi.com/static/images/logo.png" />
+    <title>File Metadata Microservice</title>
+  </head>
+  <body>
+    <h1>File Metadata Microservice</h1>
+    <hr />
+    <h3>Usage:</h3>
+    <p>Please Upload a File ...</p>
+    <form
+      action="/.netlify/functions/server/api/fileanalyse"
+      enctype="multipart/form-data"
+      method="post">
+      <input type="file" name="upfile" />
+      <input type="submit" value="Upload" />
+    </form>
+  </body>
+</html>
