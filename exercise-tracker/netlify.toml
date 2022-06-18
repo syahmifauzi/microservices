@@ -1,0 +1,10 @@
+[build]
+  base = "/exercise-tracker"
+  publish = "src/"
+  functions = "lambda"
+  command = "npm install && npm run build"
+
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/server/:splat"
+  # status = 200
